@@ -1,9 +1,7 @@
 :root {
-  --bg-color: #fdebdd;
-  --card-color: #f8d4bc;
-  --card-border-color: #f6c9aa;
-  --main-font-color: #4e4040;
-  --header-font-color: #2d1e1e;
+  --bg-color: #f3f3f3;
+  --main-font-color: #383838;
+  --header-font-color: #313131;
 }
 
 * {
@@ -26,8 +24,15 @@ body {
 
 h1, h2, h3 {
   font-family: 'Mukta', sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: var(--header-font-color);
+  line-height: 2.5rem;
+}
+
+p {
+  font-family: 'Mukta', sans-serif;
+  font-size: 1rem;
+  color: var(--main-font-color);
   line-height: 2rem;
 }
 
@@ -43,24 +48,21 @@ a:hover {
   transform: translateY(-3px);
 }
 
+.banner {
+  background-image: url("/images/eberhard-grossgasteiger-cs0sK0gzqCU-unsplash.jpg");
+  background-size: cover;
+  padding: 80px 0;
+}
+
 .container {
   margin: 0 auto;
-  width: 80%;
+  width: 60%;
+  position: relative;
+  top: -75px;
 }
 
-.peach-card {
-  background-color: var(--card-color);
-  border: 2px solid var(--card-border-color);
-  margin: 40px 0;
-  border-radius: 5px;
-  padding: 15px 25px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  transition: 1s ease-out;
-}
-
-.peach-card:hover {
-  background-color: var(--card-border-color);
-  border: 2px solid var(--card-color);
+.container > div {
+  margin-bottom: 30px;
 }
 
 .center-content {
@@ -85,22 +87,49 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 
-@media (max-width: 960px) {
+.justify-text {
+  text-align: justify;
+}
+
+#profile-title > h2 {
+  font-size: 1rem;
+}
+
+@media (max-width: 800px) {
   .container {
-    width: 700px;
+    width: 70%;
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 640px) {
   .container {
-    width: 500px;
+    width: 80%;
   }
 }
 
-@media (max-width: 540px) {
-  .container {
-    width: 300px;
+@media (max-width: 400px) {
+  html {
+    font-size: 80%;
   }
+}
+
+#profile-slide-in {
+  animation: slide-in-left 1s ease-out forwards;
+}
+
+#banner-slide-in {
+  animation: slide-in-down 1s ease-out forwards;
+}
+
+@keyframes slide-in-left {
+  0% { transform: translateX(-100vw) };
+  100% { transform: translateX(0vw) };
+}
+
+@keyframes slide-in-down {
+  0% { transform: translateY(-80px) };
+  100% { transform: translateY(0px) };
 }
