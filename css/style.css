@@ -28,8 +28,8 @@
 
 @media (min-width: 800px) {
   :root {
-      --fs-h1: 4rem;
-      --fs-h2: 3.75rem;
+      --fs-h1: 3.6rem;
+      --fs-h2: 2.8rem;
       --fs-h3: 1.5rem;
       --fs-body: 1.125rem;
   }
@@ -385,7 +385,7 @@ header {
 
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 1em;
 }
 
@@ -393,7 +393,7 @@ header {
   position: relative;
   background: transparent;
   overflow: hidden;
-  max-width: 600px;
+  max-width: 500px;
   width: 100%;
   aspect-ratio: 4 / 3;
   border-radius: 0.5em;
@@ -409,6 +409,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1em;
   position: absolute;
   top: 0;
   left: 0;
