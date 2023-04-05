@@ -1,53 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tang Chee Hwa - Full Stack Developer</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="banner"></div>
-  <div class="container">
-    <div class="center-content slide-left-in" id="profile-title" style="--order: 1">
-      <img height="150" src="./images/profile_picture.jpg" alt="Profile picture of Tang Chee Hwa" class="img-round">
-      <h1>Tang Chee Hwa</h1>
-      <h2>PROGRAMMER</h2>
-    </div>
-    <div class="center-content slide-left-in" style="--order: 2">
-      <ul class="list-inline flex-row">
-        <li>
-          <a href="mailto:cheehwa.tang@gmail.com" target="_blank">
-            <i class="fa-solid fa-square-envelope fa-xl"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/cheehwatang/" target="_blank">
-            <i class="fa-brands fa-square-github fa-xl"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/cheehwatang" target="_blank">
-            <i class="fa-brands fa-square-twitter fa-xl"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/cheehwatang/" target="_blank">
-            <i class="fa-brands fa-linkedin fa-xl"></i>
-          </a>
-        </li>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chee Hwa Tang - Full Stack Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+  </head>
+  <body>
+    <!-- Navigation Bar at the Top of the Page -->
+    <header>
+      <div class="logo">
+        <img src="images/cheehwatang.svg" alt="">
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">My Skills</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">My Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi <span class="wave">👋</span> I am <strong>Chee Hwa <span class="underline">Tang</span></strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">Full Stack Developer</p>
+      <img src="images/profile_picture.jpg" alt="a picture of Chee Hwa Tang smiling" class="intro__img">
+    </section>
+
+    <!-- My Skills Section -->
+    <section class="my-skills" id="skills">
+      <h2 class="section__title section__title--skills">Skills</h2>
+      <div class="skills">
+        <div class="skill">
+          <h3>Front-end Design</h3>
+          <p>HTML, CSS, JavaScript | Responsive UI/UX Design | React & Redux (In-Progress) | Wireframe Design (Figma)</p>
+          <p>Creative and Adaptable</p>
+        </div> <!-- / skill -->
+        
+        <div class="skill">
+          <h3>Back-end Engineering</h3>
+          <p>Ruby & Java | Ruby on Rails | Querying APIs | Data Structure & Algorithms</p>
+          <p>Problem Solving</p>
+        </div> <!-- / skill -->
+        
+        <div class="skill">
+          <h3>Databases & DevOps</h3>
+          <p>SQL, PostgresSQL | MVC Design | Web App Deployment | Agile Methodologies with Kanban</p>
+          <p>Effective Communication & Collaboration</p>
+        </div> <!-- / skill -->
+      </div> <!-- / skills -->
+      
+      <a href="#projects" class="btn">My Projects</a>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">Full Stack Developer based out of Singapore</p>
+      
+      <div class="about-me__body">
+        <p>A Food Technologist with five years of industry experience specialising in customized food coloring solutions for new product development.</p>
+        <p>Strong analytical skills and a keen attention to detail, enable consistent delivery of tailored solutions to clients, resulting in business growth.</p>
+        <p>Recognizing the profound impact of the technology industry, enrolled in the Le Wagon web development bootcamp to acquire skills in building apps that enhance lives.</p>
+        <p>Continuously improving skills and creating web apps through projects to deliver value to others.</p>
+      </div>
+      
+      <img src="images/profile_picture_portrait.jpg" alt="portrait of Chee Hwa Tang." class="about-me__img">
+    </section>
+
+    <!-- My Projects Section -->
+    <section class="my-projects" id="projects">
+      <h2 class="section__title section__title--projects">My projects</h2>
+      <p class="section__subtitle section__subtitle--projects"></p>
+      
+      <div class="portfolio">
+        <!-- Soundstate -->
+        <div class="portfolio__item">
+          <img src="images/soundstate_landing.jpg" alt="" class="portfolio__img">
+          <div class="portfolio__description">
+            <h3>SoundState</h3>
+            <p>See Your Music in a New Light - Transforming Music into Art with AI</p>
+            <a href="https://www.soundstate.live/" class="btn">Visit Website <i class="fa-solid fa-angle-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Film Redux -->
+        <div class="portfolio__item">
+          <img src="images/film_redux_home.jpg" alt="" class="portfolio__img">
+          <div class="portfolio__description">
+            <h3>Film Redux</h3>
+            <p>A simple website to curate your own movie watchlists and share with the world</p>
+            <a href="https://film-redux.herokuapp.com/" class="btn">Visit Website <i class="fa-solid fa-angle-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:cheehwa.tang@gmail.com" class="footer__link"><i class="fa-regular fa-envelope"></i> cheehwa.tang@gmail.com</a>
+      <ul class="social-list">
+        <li class="social-list__item"><a class="social-list__link" href="https://github.com/cheehwatang"><i class="fa-brands fa-github"></i></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/cheehwatang/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="https://twitter.com/cheehwatang"><i class="fa-brands fa-twitter"></i></a></li>
       </ul>
-    </div>
-    <div class="center-content slide-left-in" style="--order: 3">
-      <p class="justify-text">👋 I'm <em>Chee Hwa</em>. I am currently attending a Web Development Bootcamp with Le Wagon Singapore with the intention to become a Web Developer.
-        My background is in Food Science and Technology, with over 4 years of experience in the food coloring and product development segment.
-        What I love most about my current journey is learning to help people solve the challenges they face by finding solutions and recommendations.</p>
-    </div>
-  </div>
-</body>
+    </footer>
+
+    <script src="js/index.js"></script>
+
+  </body>
 </html>
