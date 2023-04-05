@@ -52,6 +52,7 @@ body {
 
 section {
   padding: 5em 2em;
+  min-height: 100vh;
 }
 
 img {
@@ -68,8 +69,8 @@ img {
   text-decoration-line: underline;
 }
 
-/* Buttons */
 
+/* Buttons */
 .btn {
   display: inline-block;
   padding: .5em 2.5em;
@@ -100,10 +101,6 @@ h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
 
 /* Styles for the Sections */
-section {
-  min-height: 100vh;
-}
-
 .section__title {
   margin-bottom: .25em;
 }
@@ -253,6 +250,11 @@ header {
 .intro {
   max-width: 720px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
 }
 
 @media (min-width: 650px) {
