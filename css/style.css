@@ -192,9 +192,9 @@ header {
   background: transparent;
   border: 0;
   cursor: pointer;
-  position: absolute;
-  right: 1em;
-  top: 1em;
+  position: fixed;
+  right: 1.5em;
+  top: 1.8em;
   z-index: 1000;
 }
 
