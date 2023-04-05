@@ -131,6 +131,56 @@ h3 { font-size: var(--fs-h3) }
   box-shadow: var(--bs);
 }
 
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+.nav {
+  position: fixed;
+  background: var(--clr-dark);
+  color: var(--clr-light);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  color: inherit;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h2);
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: var(--clr-accent);
+}
+
+
 /* Introduction Section */
 @media (min-width: 650px) {
   .intro {
@@ -162,6 +212,7 @@ h3 { font-size: var(--fs-h3) }
       width: calc(100% + 1em);
   }
 }
+
 
 /* Skills Section */
 .my-skills {
@@ -210,6 +261,7 @@ h3 { font-size: var(--fs-h3) }
   }
 }
 
+
 /* About Me Section */
 .about-me {
   max-width: 1000px;
@@ -257,6 +309,7 @@ h3 { font-size: var(--fs-h3) }
   }
 }
 
+
 /* My Projects */
 .my-projects {
   background-color: var(--clr-dark);
@@ -297,7 +350,6 @@ h3 { font-size: var(--fs-h3) }
 
 
 /* Footer */
-
 .footer {
   background: #111;
   color: var(--clr-accent);
@@ -340,6 +392,7 @@ h3 { font-size: var(--fs-h3) }
 .social-list__link {
   padding: 0.5em;
 }
+
 
 /* Animation for wave emoji */
 .wave {
