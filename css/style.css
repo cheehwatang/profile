@@ -145,10 +145,6 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1em;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 3;
 }
 
 .logo {
@@ -196,7 +192,7 @@ header {
   background: transparent;
   border: 0;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   right: 1.5em;
   top: 1.8em;
   z-index: 1000;
