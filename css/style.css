@@ -367,6 +367,24 @@ header {
   margin: 0 auto;
 }
 
+.about-me__body p {
+  text-align: justify;
+}
+
+.about-me__body span {
+  text-decoration: underline;
+  font-weight: 600;
+  color: var(--clr-accent);
+  position: relative;
+  transition: all 400ms ease-in-out;
+}
+
+.about-me__body span:hover {
+  color: var(--clr-light);
+  background-color: var(--clr-accent);
+  text-decoration: none;
+}
+
 @media (min-width: 600px) {
   .about-me {
       display: grid;
