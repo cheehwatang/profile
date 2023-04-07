@@ -11,6 +11,7 @@
   --ff-secondary: 'Source Code Pro', monospace;
   
   --fw-reg: 300;
+  --fw-medium: 600;
   --fw-bold: 900;
   
   --clr-light: #fff;
@@ -410,7 +411,7 @@ header {
 
 .about-me__body span {
   text-decoration: underline;
-  font-weight: 600;
+  font-weight: var(--fw-medium);
   color: var(--clr-accent);
   position: relative;
   transition: all 400ms ease-in-out;
@@ -539,6 +540,33 @@ header {
   margin: 3em auto;
 }
 
+.social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 0;
+  padding: 0;
+}
+
+.social-list__item {
+  margin: 0 0.5em;
+}
+
+.social-list__link {
+  display: inline-block;
+  padding: 0.5em;
+  transform: translateY(0);
+  transition: transform 300ms ease-in-out;
+  color: var(--clr-dark);
+  font-size: var(--fs-h2);
+}
+
+.social-list__link:hover {
+  display: inline-block;
+  padding: 0.5em;
+  transform: translateY(-0.2em);
+}
+
 
 /* Footer */
 .footer {
@@ -567,30 +595,6 @@ header {
   text-decoration: underline;
 }
 
-.social-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 1em 0 0;
-  padding: 0;
-}
-
-.social-list__item {
-  margin: 0 0.5em;
-}
-
-.social-list__link {
-  display: inline-block;
-  padding: 0.5em;
-  transform: translateY(0);
-  transition: transform 300ms ease-in-out;
-}
-
-.social-list__link:hover {
-  display: inline-block;
-  padding: 0.5em;
-  transform: translateY(-0.2em);
-}
 
 /* Animation for wave emoji */
 .wave {
