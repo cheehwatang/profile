@@ -89,10 +89,10 @@ img {
   transform: scale(1.1);
 }
 
-.btn_outline {
+.btn-outline {
   display: inline-block;
   padding: 0.5em 2.5em;
-  background: var(--clr-dark);
+  background: transparent;
   color: var(--clr-accent);
   border: 0.2em solid var(--clr-accent);
   border-radius: 0.5em;
@@ -104,7 +104,7 @@ img {
   transition: all 300ms ease-in-out;
 }
 
-.btn_outline:hover {
+.btn-outline:hover {
   background: var(--clr-accent);
   color: var(--clr-dark);
 }
@@ -522,6 +522,21 @@ header {
 .portfolio__item:hover .portfolio__description,
 .portfolio__item:focus .portfolio__description {
   opacity: 1;
+}
+
+
+/* Contact Me Section */
+.contact-me {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-me__body {
+  max-width: 600px;
+  margin: 3em auto;
 }
 
 
