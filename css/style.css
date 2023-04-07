@@ -558,7 +558,7 @@ header {
   transform: translateY(0);
   transition: transform 300ms ease-in-out;
   color: var(--clr-dark);
-  font-size: var(--fs-h2);
+  font-size: 2rem;
 }
 
 .social-list__link:hover {
