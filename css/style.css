@@ -351,24 +351,24 @@ header {
   display: block;
   width: 2em;
   height: 1px;
-  margin: 0.5em auto 1em;
+  margin: 0.5em auto;
   background: var(--clr-light);
   opacity: 0.25;
 }
 
 .skills {
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 
 .skill {
   min-width: 250px;
   max-width: 500px;
-  margin: 3em auto 0;
+  margin-bottom: 2.5em;
 }
 
 .skill-list {
   list-style: none;
-  margin: 1em 0 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -384,7 +384,7 @@ header {
       margin-right: auto;
   }
 
-  .skill { margin-top: 0; }
+  .skill { margin-bottom: 0; }
   
   .skill + .skill {
       margin-left: 2em;
