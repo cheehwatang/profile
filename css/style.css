@@ -89,6 +89,26 @@ img {
   transform: scale(1.1);
 }
 
+.btn_outline {
+  display: inline-block;
+  padding: 0.5em 2.5em;
+  background: var(--clr-dark);
+  color: var(--clr-accent);
+  border: 0.2em solid var(--clr-accent);
+  border-radius: 0.5em;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: all 300ms ease-in-out;
+}
+
+.btn_outline:hover {
+  background: var(--clr-accent);
+  color: var(--clr-dark);
+}
+
 /* Typography */
 
 h1, h2, h3 {
