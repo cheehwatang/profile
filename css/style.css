@@ -95,13 +95,13 @@ img {
   background: var(--clr-dark);
   color: var(--clr-accent);
   border: 0.2em solid var(--clr-accent);
+  border-radius: 0.5em;
   text-decoration: none;
   cursor: pointer;
   font-size: 1rem;
-  text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
-  transition: transform 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .btn_outline:hover {
