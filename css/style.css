@@ -363,13 +363,14 @@ header {
 }
 
 .skills {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .skill {
-  min-width: 250px;
-  max-width: 500px;
-  margin-bottom: 2.5em;
+  min-width: 240px;
+  width: 30%;
+  padding: 1em;
+  margin: 0 auto 2em;
 }
 
 .skill-list {
@@ -382,19 +383,15 @@ header {
   margin: 1em;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 800px) {
   .skills {
       display: flex;
+      width: 100%;
       max-width: 1000px;
-      margin-left: auto;
-      margin-right: auto;
+      justify-content: space-between;
   }
 
   .skill { margin-bottom: 0; }
-  
-  .skill + .skill {
-      margin-left: 2em;
-  }
 }
 
 
@@ -593,6 +590,7 @@ header {
 /* Style for Scrollbars */
 ::-webkit-scrollbar {
   width: 0.3em;
+  height: 0.3em;
 }
 
 ::-webkit-scrollbar-track {
