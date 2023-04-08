@@ -17,6 +17,7 @@
   --clr-light: #FEFFFF;
   --clr-dark: #17252A;
   --clr-accent: #16F8ED;
+  --clr-accent-glow: #16F8ED80;
   --clr-accent-dark: #25DBD2;
   --clr-base: #DEF2F1;
   
@@ -363,13 +364,23 @@ header {
 }
 
 .skills {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .skill {
-  min-width: 250px;
-  max-width: 500px;
-  margin-bottom: 2.5em;
+  min-width: 240px;
+  width: 30%;
+  padding: 1em;
+  margin: 0 auto 2em;
+  background-color: transparent;
+  border: 1px solid var(--clr-accent-glow);
+  backdrop-filter: blur(20px);
+  border-radius: .7rem;
+  transition: all ease .3s;
+}
+
+.skill:hover {
+  box-shadow: 0px 0px 20px 1px var(--clr-accent-glow);
 }
 
 .skill-list {
@@ -382,18 +393,12 @@ header {
   margin: 1em;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 800px) {
   .skills {
       display: flex;
+      width: 100%;
       max-width: 1000px;
-      margin-left: auto;
-      margin-right: auto;
-  }
-
-  .skill { margin-bottom: 0; }
-  
-  .skill + .skill {
-      margin-left: 2em;
+      justify-content: space-between;
   }
 }
 
@@ -504,7 +509,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1em;
   position: absolute;
   top: 0;
   left: 0;
@@ -594,6 +598,7 @@ header {
 /* Style for Scrollbars */
 ::-webkit-scrollbar {
   width: 0.3em;
+  height: 0.3em;
 }
 
 ::-webkit-scrollbar-track {
