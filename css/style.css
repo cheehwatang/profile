@@ -504,7 +504,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1em;
   position: absolute;
   top: 0;
   left: 0;
