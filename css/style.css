@@ -593,7 +593,7 @@ header {
 
 /* Style for Scrollbars */
 ::-webkit-scrollbar {
-  width: 0.2em;
+  width: 0.3em;
 }
 
 ::-webkit-scrollbar-track {
@@ -606,6 +606,12 @@ header {
   border-radius: 100vw;
 }
 
+@supports (scrollbar-color: red blue) {
+  * {
+    scrollbar-color: var(--clr-accent-dark) var(--clr-base);
+    scrollbar-width: thin;
+  }
+}
 
 /* Animation for wave emoji */
 .wave {
