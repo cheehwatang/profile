@@ -591,6 +591,22 @@ header {
 }
 
 
+/* Style for Scrollbars */
+::-webkit-scrollbar {
+  width: 0.2em;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--clr-base);
+  margin-block: 0.1em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--clr-accent-dark);
+  border-radius: 100vw;
+}
+
+
 /* Animation for wave emoji */
 .wave {
   animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
