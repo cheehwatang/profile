@@ -23,7 +23,7 @@
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
-  --fs-h3: 1.25rem;
+  --fs-h3: 1.5rem;
   --fs-body: 1rem;
 
   --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
@@ -530,7 +530,30 @@ header {
   transform: scale(1.2);
 }
 
-.portfolio__description {
+.portfolio__description h4 {
+  font-size: var(--fs-h3);
+  margin: 1.5em 0 0.5em;
+}
+
+.portfolio__summary p {
+  text-align: justify;
+}
+
+.portfolio__tech-stack ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 0.5em;
+}
+
+@media (min-width: 600px) {
+  .portfolio__description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+  }
 }
 
 /* Contact Me Section */
@@ -644,5 +667,16 @@ header {
   } /* Reset for the last half to pause */
   100% {
     transform: rotate(0deg);
+  }
+}
+
+/* Selective CSS for responsiveness for mobile and desktop */
+.mobile-hidden {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .mobile-hidden {
+    display: contents;
   }
 }
