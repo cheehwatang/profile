@@ -22,10 +22,10 @@
         <ul class="nav__list">
           <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
           <li class="nav__item"><a href="#skills" class="nav__link">My Skills</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
           <li class="nav__item"><a href="#projects" class="nav__link">My Projects</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
           <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-          <li class="nav__item"><a href="./document/CV of Tang Chee Hwa - Full Stack Developer.pdf" target="_blank" class="btn-outline">Resume</a></li>
+          <li class="nav__item"><a href="./document/CV of Tang Chee Hwa.pdf" target="_blank" class="btn-outline">Resumé</a></li>
         </ul>
       </nav>
     </header>
@@ -40,7 +40,7 @@
         <img src="images/profile_picture.jpg" alt="a picture of Chee Hwa Tang smiling" class="intro__img">
       </div>
       <div>
-        <h3>I love to build and design beautiful apps.</h3>
+        <h3>Building your digital dreams into reality.</h3>
       </div>
     </section>
 
@@ -53,7 +53,7 @@
           <ul class="skill-list">
             <li class="skill-list__item">HTML, CSS, JavaScript</li>
             <li class="skill-list__item">Responsive UI/UX Design</li>
-            <li class="skill-list__item">React & Redux (In-Progress)</li>
+            <li class="skill-list__item">React & Redux</li>
             <li class="skill-list__item">Wireframe Design (Figma)</li>
           </ul>
         </div> <!-- / skill -->
@@ -71,26 +71,78 @@
         <div class="skill">
           <h3>Databases & DevOps</h3>
           <ul class="skill-list">
-            <li class="skill-list__item">SQL, PostgresSQL</li>
-            <li class="skill-list__item">Web App Deployment</li>
+            <li class="skill-list__item">SQL, PostgreSQL</li>
+            <li class="skill-list__item">Deployment with Heroku</li>
             <li class="skill-list__item">Agile Methodologies with Kanban</li>
+            <li class="skill-list__item">CI/CD</li>
           </ul>
         </div> <!-- / skill -->
       </div> <!-- / skills -->
-      
-      <a href="#projects" class="btn btn-accent">My Projects</a>
+    </section>
+
+    <!-- My Projects Section -->
+    <section class="my-projects" id="projects">
+      <h2 class="section__title section__title--projects">My projects</h2>
+
+      <div class="portfolio">
+        <!-- Soundstate -->
+        <a href="#soundstate" class="portfolio__item">
+          <img src="images/soundstate_landing.jpg" alt="" class="portfolio__img">
+        </a>
+      </div>
+      <div class="portfolio__section" id="soundstate">
+        <h3>SoundState</h3>
+        <div class="portfolio__description">
+          <div class="portfolio__summary">
+            <h4 class="mobile-hidden">SUMMARY</h4>
+            <p>
+              SoundState is an app that generates a personalized music playlist based on the user's mood, curated from their Spotify Liked Songs. 
+              Its most standout feature is the creation of an image that visually represents the mood and songs of the playlist, 
+              making music sharing and discovery a fun and engaging experience. 
+              Our 4-person team developed SoundState during the final 2 weeks of our bootcamp.
+            </p>
+            <div class="portfolio__tech-stack">
+              <h4>TECH</h4>
+              <ul>
+                <li>Ruby on Rails</li>
+                <li>AJAX & Stimulus JS</li>
+                <li>Three.js</li>
+                <li>Sass</li>
+                <li>PostgreSQL</li>
+                <li>Heroku</li>
+                <li>Spotify API</li>
+                <li>OpenAI API</li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://www.soundstate.live/" class="btn btn-accent-dark">Visit Website <i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <div>
+              <a href="https://github.com/weepotty/soundstate" class="btn btn-accent-dark"><i class="fa-brands fa-github fa-2x"></i></a>
+            </div>
+          </div>
+          <div class="portfolio__description__img">
+            <img src="images/soundstate/soundstate-landing-large.png" alt="soundstate landing page" loading="lazy">
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- About Me Section -->
     <section class="about-me" id="about">
       <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about">Full Stack Developer based out of Singapore</p>
+      <p class="section__subtitle section__subtitle--about">A Curious Explorer</p>
       
       <div class="about-me__body">
         <p>
           As a Food Technologist with five years of industry experience specializing in natural food coloring solutions for new product development,
           I have developed strong <span>problem solving</span> skills with a keen <span>attention to detail</span>, enabling me to consistently deliver tailored solutions to clients.
           In addition, my <span>effective communication</span> skills have been instrumental when collaborating with the sales team to promote our products and services to customers, resulting in significant business growth.
+        </p>
+        <p>
+          Following an extensive spiritual exploration and self-discovery, I have gained a clear understanding of my values and recognized the blessings in my life. 
+          My mission is to improve the lives of others and <span>contribute</span> to a brighter future for generations to come, 
+          by carrying forward the legacy of generosity and kindness bestowed upon me by my predecessors.
         </p>
         <p>
           Recognizing the profound impact of the technology industry, I enrolled in the Le Wagon Web Development course, where I acquired skills in designing and building apps that enhance people's lives.
@@ -101,46 +153,20 @@
           Since completing the course, I have continuously improved my technical skills and created web apps within teams to deliver value to others.
           I am eager to apply my skills to create innovative apps that make a positive impact in the world.
         </p>
+        <p>
+          In my free time, I love to 🏃‍♂️ run, 🚴 cycle, 🏊‍♂️ swim and 🛼 inline-skating, or simply hangout with friends over a ☕ coffee or 🍻 beers.
+        </p>
       </div>
       
-      <img src="images/profile_picture_portrait.jpg" alt="portrait of Chee Hwa Tang." class="about-me__img">
-    </section>
-
-    <!-- My Projects Section -->
-    <section class="my-projects" id="projects">
-      <h2 class="section__title section__title--projects">My projects</h2>
-      <p class="section__subtitle section__subtitle--projects"></p>
-      
-      <div class="portfolio">
-        <!-- Soundstate -->
-        <div class="portfolio__item">
-          <img src="images/soundstate_landing.jpg" alt="" class="portfolio__img">
-          <div class="portfolio__description">
-            <h3>SoundState</h3>
-            <p>See Your Music in a New Light - Transforming Music into Art with AI</p>
-            <a href="https://www.soundstate.live/" class="btn btn-accent-dark">Visit Website <i class="fa-solid fa-angle-right"></i></a>
-            <a href="https://github.com/weepotty/soundstate" class="btn btn-accent-dark"><i class="fa-brands fa-github fa-2x"></i></a>
-          </div>
-        </div>
-
-        <!-- Film Redux -->
-        <div class="portfolio__item">
-          <img src="images/film_redux_home.jpg" alt="" class="portfolio__img">
-          <div class="portfolio__description">
-            <h3>Film Redux</h3>
-            <p>A simple website to curate your own movie watchlists and share with the world</p>
-            <a href="https://film-redux.herokuapp.com/" class="btn btn-accent-dark">Visit Website <i class="fa-solid fa-angle-right"></i></a>
-            <a href="https://github.com/cheehwatang/rails-watch-list" class="btn btn-accent-dark"><i class="fa-brands fa-github fa-2x"></i></a>
-          </div>
-        </div>
-      </div>
+      <img src="images/profile_picture_rinjani.jpg" alt="portrait of Chee Hwa Tang at Mount Rinjani." class="about-me__img">
     </section>
 
     <!-- Contact Section -->
     <section class="contact-me" id="contact">
-      <h2 class="section__title section__title--contact">Get In Touch</h2>
+      <h2 class="section__title section__title--contact">Looking for a new addition to your team?</h2>
       <p class="contact-me__body">
-        I am currently open to exploring new opportunies and collaborations to develop apps and expand my expertise as a full stack developer.
+        I am currently available to join a team or company.<br>
+        Additionally, I am looking for collaborations to develop apps and expand my expertise as a full stack developer.
         Please feel free to contact me for any questions or to simply say hi.
       </p>
       <a href="mailto:cheehwa.tang@gmail.com" target="_blank" class="btn-outline">Say Hello</a>
