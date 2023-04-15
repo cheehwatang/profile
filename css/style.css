@@ -501,20 +501,17 @@ header {
   margin: 0 auto;
 }
 
-.portfolio__description {
-  background: var(--clr-accent-dark);
-  width: 100%;
-  height: 100%;
-  padding: 3em;
+.portfolio__section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: all 750ms ease-in-out;
+  margin-top: 1em;
+  padding: 2em 0;
+}
+
+.portfolio__section h3 {
+  font-size: var(--fs-h2);
 }
 
 .portfolio__img {
@@ -533,9 +530,7 @@ header {
   transform: scale(1.2);
 }
 
-.portfolio__item:hover .portfolio__description,
-.portfolio__item:focus .portfolio__description {
-  opacity: 1;
+.portfolio__description {
 }
 
 /* Contact Me Section */
