@@ -2,40 +2,40 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Variables set for fonts */
 :root {
-  --ff-primary: 'Source Sans Pro', sans-serif;
-  --ff-secondary: 'Source Code Pro', monospace;
-  
+  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Source Code Pro", monospace;
+
   --fw-reg: 300;
   --fw-medium: 600;
   --fw-bold: 900;
-  
-  --clr-light: #FEFFFF;
-  --clr-dark: #17252A;
-  --clr-accent: #16F8ED;
-  --clr-accent-glow: #16F8ED80;
-  --clr-accent-dark: #25DBD2;
-  --clr-base: #DEF2F1;
-  
+
+  --clr-light: #feffff;
+  --clr-dark: #17252a;
+  --clr-accent: #16f8ed;
+  --clr-accent-glow: #16f8ed80;
+  --clr-accent-dark: #25dbd2;
+  --clr-base: #def2f1;
+
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
 
-  --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-        0.125em 0.125em 0.25em rgba(0,0,0,.15);
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
 @media (min-width: 800px) {
   :root {
-      --fs-h1: 3.6rem;
-      --fs-h2: 2.8rem;
-      --fs-h3: 1.5rem;
-      --fs-body: 1.125rem;
+    --fs-h1: 3.6rem;
+    --fs-h2: 2.8rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
   }
 }
 
@@ -73,23 +73,26 @@ img {
   text-decoration-line: underline;
 }
 
-
 /* Buttons */
 .btn {
   display: inline-block;
-  padding: .5em 2.5em;
+  padding: 0.5em 2.5em;
   color: var(--clr-dark);
   text-decoration: none;
   cursor: pointer;
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
   transition: transform 300ms ease-in-out;
 }
 
-.btn-accent { background: var(--clr-accent); }
-.btn-accent-dark { background: var(--clr-accent-dark); }
+.btn-accent {
+  background: var(--clr-accent);
+}
+.btn-accent-dark {
+  background: var(--clr-accent-dark);
+}
 
 .btn:hover {
   transform: scale(1.1);
@@ -118,18 +121,26 @@ img {
 
 /* Typography */
 
-h1, h2, h3 {
-    line-height: 1.1;
-    margin: 0;
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
 }
 
-h1 { font-size: var(--fs-h1) }
-h2 { font-size: var(--fs-h2) }
-h3 { font-size: var(--fs-h3) }
+h1 {
+  font-size: var(--fs-h1);
+}
+h2 {
+  font-size: var(--fs-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+}
 
 /* Styles for the Sections */
 .section__title {
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
 }
 
 .section__title--intro {
@@ -149,7 +160,7 @@ h3 { font-size: var(--fs-h3) }
 .section__subtitle--about {
   background: var(--clr-accent);
   font-family: var(--ff-secondary);
-  padding: .25em 1em;
+  padding: 0.25em 1em;
   margin-bottom: 1em;
 }
 
@@ -164,7 +175,6 @@ h3 { font-size: var(--fs-h3) }
   margin: 0 auto;
   max-width: 280px;
 }
-
 
 /* Header */
 header {
@@ -188,9 +198,9 @@ header {
   left: 0;
   right: 0;
   z-index: 100;
-  
+
   transform: translateX(100%);
-  transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+  transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
 }
 
 .nav__list {
@@ -235,7 +245,7 @@ header {
 }
 
 .nav-open .hamburger {
-  transform: rotate(.625turn);
+  transform: rotate(0.625turn);
 }
 
 .nav-open .hamburger::before {
@@ -261,18 +271,20 @@ header {
   transition: transform 250ms ease-in-out;
 }
 
-
 .hamburger::before,
 .hamburger::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
 }
 
-.hamburger::before { top: 6px; }
-.hamburger::after { bottom: 6px; }
-
+.hamburger::before {
+  top: 6px;
+}
+.hamburger::after {
+  bottom: 6px;
+}
 
 /* Introduction Section */
 .intro {
@@ -294,7 +306,7 @@ header {
   font-size: var(--fs-h3);
 }
 
-.intro__cta p { 
+.intro__cta p {
   margin: 0;
 }
 
@@ -306,33 +318,32 @@ header {
 
 @media (min-width: 650px) {
   .section__container--intro {
-      display: grid;
-      grid-column-gap: 1em;
-      grid-template-areas: 
-          "img title"
-          "img subtitle";
-      grid-template-columns: 220px 1fr;
+    display: grid;
+    grid-column-gap: 1em;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+    grid-template-columns: 220px 1fr;
   }
-  
+
   .intro__img {
-      grid-area: img;
-      width: 220px;
-      position: relative;
-      top: 0.5em;
-      z-index: 2;
-  }    
-  
+    grid-area: img;
+    width: 220px;
+    position: relative;
+    top: 0.5em;
+    z-index: 2;
+  }
+
   .section__subtitle--intro {
-      align-self: start;
-      grid-column: -1 / 1;
-      grid-row: 2;
-      text-align: right;
-      position: relative;
-      left: -1em;
-      width: calc(100% + 1em);
+    align-self: start;
+    grid-column: -1 / 1;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 1em);
   }
 }
-
 
 /* Skills Section */
 .my-skills {
@@ -354,7 +365,7 @@ header {
 }
 
 .section__title--skills::after {
-  content: '';
+  content: "";
   display: block;
   width: 2em;
   height: 1px;
@@ -375,12 +386,13 @@ header {
   background-color: transparent;
   border: 1px solid var(--clr-accent-glow);
   backdrop-filter: blur(20px);
-  border-radius: .7rem;
-  transition: all ease .3s;
+  border-radius: 0.7rem;
+  box-shadow: 0px 0px 20px 1px var(--clr-accent-glow);
+  transition: all ease 0.3s;
 }
 
 .skill:hover {
-  box-shadow: 0px 0px 20px 1px var(--clr-accent-glow);
+  box-shadow: 0px 0px 20px 1px var(--clr-accent);
 }
 
 .skill-list {
@@ -395,13 +407,12 @@ header {
 
 @media (min-width: 800px) {
   .skills {
-      display: flex;
-      width: 100%;
-      max-width: 1000px;
-      justify-content: space-between;
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: space-between;
   }
 }
-
 
 /* About Me Section */
 .about-me {
@@ -435,39 +446,38 @@ header {
 
 @media (min-width: 600px) {
   .about-me {
-      display: grid;
-      grid-template-columns: 1fr 240px;
-      grid-template-areas: 
-          "title img"
-          "subtitle img"
-          "text img";
-      grid-column-gap: 2em;
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    grid-template-areas:
+      "title img"
+      "subtitle img"
+      "text img";
+    grid-column-gap: 2em;
   }
-  
+
   .section__title--about {
-      grid-area: title;
+    grid-area: title;
   }
-  
+
   .section__subtitle--about {
-      grid-area: subtitle;
-      grid-column: 1 / -1;
-      grid-row: 2;
-      position: relative;
-      left: -1em;
-      width: calc(100% + 2em);
-      padding-left: 1em;
-      padding-right: calc(240px + 4em);
+    grid-area: subtitle;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 2em);
+    padding-left: 1em;
+    padding-right: calc(240px + 4em);
   }
-  
+
   .about-me__img {
-      grid-area: img;
-      top: 2em;
-      max-width: 240px;
-      position: relative;
-      z-index: 2;
+    grid-area: img;
+    top: 2em;
+    max-width: 240px;
+    position: relative;
+    z-index: 2;
   }
 }
-
 
 /* My Projects */
 .my-projects {
@@ -476,7 +486,7 @@ header {
   background-size: cover;
   background-blend-mode: multiply;
   color: var(--clr-light);
-  text-align: center;    
+  text-align: center;
 }
 
 .section__title--projects {
@@ -519,7 +529,7 @@ header {
 .portfolio__img {
   width: 100%;
   object-fit: cover;
-  transition: transform 750ms cubic-bezier(.5, 0, .5, 1);
+  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1);
 }
 
 .portfolio__item:focus {
@@ -536,7 +546,6 @@ header {
 .portfolio__item:focus .portfolio__description {
   opacity: 1;
 }
-
 
 /* Contact Me Section */
 .contact-me {
@@ -579,7 +588,6 @@ header {
   transform: translateY(-0.2em);
 }
 
-
 /* Footer */
 .footer {
   background: #111;
@@ -589,11 +597,10 @@ header {
   font-size: var(--fs-body);
 }
 
-.footer a { 
+.footer a {
   color: inherit;
   text-decoration: none;
 }
-
 
 /* Style for Scrollbars */
 ::-webkit-scrollbar {
@@ -620,20 +627,36 @@ header {
 
 /* Animation for wave emoji */
 .wave {
-  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s;        /* Change to speed up or slow down */
-  animation-iteration-count: infinite;  /* Never stop waving :) */
-  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
   display: inline-block;
 }
 
 @keyframes wave-animation {
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-  100% { transform: rotate( 0.0deg) }
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
 }
