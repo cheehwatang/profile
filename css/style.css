@@ -431,17 +431,8 @@ header {
 }
 
 .about-me__body span {
-  text-decoration: underline;
   font-weight: var(--fw-medium);
   color: var(--clr-accent-dark);
-  position: relative;
-  transition: all 400ms ease-in-out;
-}
-
-.about-me__body span:hover {
-  color: var(--clr-light);
-  background-color: var(--clr-accent-dark);
-  text-decoration: none;
 }
 
 @media (min-width: 600px) {
