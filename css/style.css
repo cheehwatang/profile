@@ -532,6 +532,10 @@ header {
   transform: scale(1.2);
 }
 
+.portfolio__description > div {
+  margin-top: 2em;
+}
+
 .portfolio__description h4 {
   font-size: var(--fs-h3);
   margin: 1.5em 0 0.5em;
@@ -549,6 +553,12 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 0.5em;
+}
+
+.portfolio__description__img {
+  box-shadow: var(--bs);
+  max-height: 650px;
+  margin: 0 auto;
 }
 
 @media (min-width: 600px) {
