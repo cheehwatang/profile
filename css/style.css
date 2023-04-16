@@ -18,7 +18,8 @@
   --clr-dark: #17252a;
   --clr-accent: #16f8ed;
   --clr-accent-glow: #16f8ed80;
-  --clr-accent-dark: #25dbd2;
+  --clr-accent-medium: #25dbd2;
+  --clr-accent-dark: #095350;
   --clr-base: #def2f1;
 
   --fs-h1: 3rem;
@@ -94,7 +95,7 @@ img {
   background: var(--clr-accent);
 }
 .btn-accent-dark {
-  background: var(--clr-accent-dark);
+  background: var(--clr-accent-medium);
 }
 
 .btn:hover {
@@ -105,8 +106,8 @@ img {
   display: inline-block;
   padding: 0.5em 2.5em;
   background: transparent;
-  color: var(--clr-accent-dark);
-  border: 0.2em solid var(--clr-accent-dark);
+  color: var(--clr-accent-medium);
+  border: 0.2em solid var(--clr-accent-medium);
   border-radius: 0.5em;
   text-decoration: none;
   cursor: pointer;
@@ -620,7 +621,7 @@ header {
   padding: 0.5em;
   transform: translateY(0);
   transition: transform 300ms ease-in-out;
-  color: var(--clr-accent-dark);
+  color: var(--clr-accent-medium);
   font-size: 2rem;
 }
 
@@ -656,13 +657,13 @@ header {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--clr-accent-dark);
+  background: var(--clr-accent-medium);
   border-radius: 100vw;
 }
 
 @supports (scrollbar-color: red blue) {
   * {
-    scrollbar-color: var(--clr-accent-dark) var(--clr-base);
+    scrollbar-color: var(--clr-accent-medium) var(--clr-base);
     scrollbar-width: thin;
   }
 }
