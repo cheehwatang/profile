@@ -292,7 +292,7 @@ header {
 
 /* Introduction Section */
 .intro {
-  max-width: 720px;
+  max-width: 740px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -525,7 +525,16 @@ header {
   align-items: center;
 }
 
-.portfolio__description__img > img {
+.portfolio__description__img > a {
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+
+.portfolio__description__img > a:hover {
+  transform: scale(1.02);
+}
+
+.portfolio__description__img > a > img {
   max-height: 600px;
   margin: 0 auto;
 }
@@ -612,7 +621,7 @@ header {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 2em 0 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -622,7 +631,7 @@ header {
 
 .social-list__link {
   display: inline-block;
-  padding: 0.5em;
+  padding: 0 0.5em;
   transform: translateY(0);
   transition: transform 300ms ease-in-out;
   color: var(--clr-accent-medium);
@@ -631,7 +640,6 @@ header {
 
 .social-list__link:hover {
   display: inline-block;
-  padding: 0.5em;
   transform: translateY(-0.2em);
 }
 
