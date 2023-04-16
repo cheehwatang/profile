@@ -320,6 +320,10 @@ header {
   margin: 0 0.5em;
 }
 
+.fs-h3 {
+  font-size: var(--fs-h3);
+}
+
 @media (min-width: 650px) {
   .section__container--intro {
     display: grid;
