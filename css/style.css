@@ -351,7 +351,7 @@ header {
 /* Skills Section */
 .my-skills {
   background-color: var(--clr-accent);
-  background-image: url("../images/background_skills.jpg");
+  background-image: url("https://res.cloudinary.com/dsx50recn/image/upload/v1681618641/Portfolio%20Website/background_skills_imvk67.jpg");
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;
@@ -421,7 +421,7 @@ header {
 /* My Projects */
 .my-projects {
   background-color: var(--clr-accent-glow);
-  background-image: url("../images/background_projects.jpg");
+  background-image: url("https://res.cloudinary.com/dsx50recn/image/upload/v1681618641/Portfolio%20Website/background_projects_ytkcg5.jpg");
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;
