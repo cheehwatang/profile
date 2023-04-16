@@ -18,7 +18,8 @@
   --clr-dark: #17252a;
   --clr-accent: #16f8ed;
   --clr-accent-glow: #16f8ed80;
-  --clr-accent-dark: #25dbd2;
+  --clr-accent-medium: #25dbd2;
+  --clr-accent-dark: #095350;
   --clr-base: #def2f1;
 
   --fs-h1: 3rem;
@@ -94,7 +95,7 @@ img {
   background: var(--clr-accent);
 }
 .btn-accent-dark {
-  background: var(--clr-accent-dark);
+  background: var(--clr-accent-medium);
 }
 
 .btn:hover {
@@ -105,8 +106,8 @@ img {
   display: inline-block;
   padding: 0.5em 2.5em;
   background: transparent;
-  color: var(--clr-accent-dark);
-  border: 0.2em solid var(--clr-accent-dark);
+  color: var(--clr-accent-medium);
+  border: 0.2em solid var(--clr-accent-medium);
   border-radius: 0.5em;
   text-decoration: none;
   cursor: pointer;
@@ -319,6 +320,10 @@ header {
   margin: 0 0.5em;
 }
 
+.fs-h3 {
+  font-size: var(--fs-h3);
+}
+
 @media (min-width: 650px) {
   .section__container--intro {
     display: grid;
@@ -351,7 +356,7 @@ header {
 /* Skills Section */
 .my-skills {
   background-color: var(--clr-accent);
-  background-image: url("../images/background_skills.jpg");
+  background-image: url("https://res.cloudinary.com/dsx50recn/image/upload/v1681618641/Portfolio%20Website/background_skills_imvk67.jpg");
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;
@@ -421,7 +426,7 @@ header {
 /* My Projects */
 .my-projects {
   background-color: var(--clr-accent-glow);
-  background-image: url("../images/background_projects.jpg");
+  background-image: url("https://res.cloudinary.com/dsx50recn/image/upload/v1681618641/Portfolio%20Website/background_projects_ytkcg5.jpg");
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;
@@ -620,7 +625,7 @@ header {
   padding: 0.5em;
   transform: translateY(0);
   transition: transform 300ms ease-in-out;
-  color: var(--clr-accent-dark);
+  color: var(--clr-accent-medium);
   font-size: 2rem;
 }
 
@@ -656,13 +661,13 @@ header {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--clr-accent-dark);
+  background: var(--clr-accent-medium);
   border-radius: 100vw;
 }
 
 @supports (scrollbar-color: red blue) {
   * {
-    scrollbar-color: var(--clr-accent-dark) var(--clr-base);
+    scrollbar-color: var(--clr-accent-medium) var(--clr-base);
     scrollbar-width: thin;
   }
 }
@@ -712,4 +717,31 @@ header {
   .mobile-hidden {
     display: initial;
   }
+}
+
+/* Additional styles for better accessibility */
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important; /* 2 */
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important; /* 3 */
+}
+
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+  clip: auto !important;
+  -webkit-clip-path: none !important;
+  clip-path: none !important;
+  height: auto !important;
+  margin: auto !important;
+  overflow: visible !important;
+  width: auto !important;
+  white-space: normal !important;
 }
