@@ -397,7 +397,15 @@ header {
   backdrop-filter: blur(20px);
   border-radius: 0.7rem;
   box-shadow: 0px 0px 20px 1px var(--clr-accent-glow);
-  transition: all ease 0.3s;
+  opacity: 0;
+  transform: translateY(2em);
+  transition: box-shadow ease 0.3s, opacity ease-in-out 0.7s,
+    transform ease-in-out 0.7s;
+}
+
+.skill.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .skill:hover {
@@ -420,6 +428,16 @@ header {
     width: 100%;
     max-width: 1000px;
     justify-content: space-between;
+  }
+
+  .skill:nth-child(1) {
+    transition-delay: 0;
+  }
+  .skill:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  .skill:nth-child(3) {
+    transition-delay: 0.4s;
   }
 }
 
