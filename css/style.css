@@ -21,6 +21,7 @@
   --clr-accent-medium: #25dbd2;
   --clr-accent-dark: #095350;
   --clr-base: #def2f1;
+  --clr-black: #000101;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -355,8 +356,9 @@ header {
 
 /* Skills Section */
 .my-skills {
+  position: relative;
   background-color: var(--clr-accent);
-  background-image: url("https://res.cloudinary.com/dsx50recn/image/upload/v1681618641/Portfolio%20Website/background_skills_imvk67.jpg");
+  background-image: url("https://res.cloudinary.com/dsx50recn/image/upload/v1682056798/Portfolio%20Website/background_skills_full_bqufit.webp");
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;
@@ -444,11 +446,7 @@ header {
 /* My Projects */
 .my-projects {
   position: relative;
-  background-color: var(--clr-accent-glow);
-  background-image: url("https://res.cloudinary.com/dsx50recn/image/upload/v1681618641/Portfolio%20Website/background_projects_ytkcg5.jpg");
-  background-position: center;
-  background-size: cover;
-  background-blend-mode: multiply;
+  background-color: var(--clr-black);
   color: var(--clr-light);
   text-align: center;
 }
@@ -787,4 +785,37 @@ header {
   padding: 0;
   margin: 0;
   z-index: 0;
+}
+
+/* Styles for wave spacers */
+.wave-spacer {
+  aspect-ratio: 960 / 200;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wave-base-to-black {
+  background-image: url("../images/spacers/wave-base-black.svg");
+}
+
+.wave-black-to-base {
+  background-image: url("../images/spacers/wave-black-base.svg");
+}
+
+.wave-spacer-narrow {
+  aspect-ratio: 960 / 100;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wave-base-to-black-narrow {
+  background-image: url("../images/spacers/wave-base-black-narrow.svg");
+}
+
+.wave-black-to-base-narrow {
+  background-image: url("../images/spacers/wave-black-base-narrow.svg");
 }
