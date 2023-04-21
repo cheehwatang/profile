@@ -18,7 +18,7 @@ tsParticles.load("tsparticles", {
     links: {
       enable: true,
       distance: 80,
-      opacity: 0.3,
+      opacity: 0.6,
     },
     move: {
       enable: true,
