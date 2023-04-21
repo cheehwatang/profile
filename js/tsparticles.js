@@ -13,12 +13,12 @@ tsParticles.load("tsparticles", {
     size: {
       value: 4,
       random: !1,
-      anim: { enable: !0, speed: 3, size_min: 0, sync: !1 },
+      anim: { enable: !0, speed: 3, size_min: 1, sync: !1 },
     },
     links: {
       enable: true,
       distance: 80,
-      opacity: 0.3,
+      opacity: 0.6,
     },
     move: {
       enable: true,
