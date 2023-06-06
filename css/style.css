@@ -185,13 +185,9 @@ h3 {
 header {
 	display: flex;
 	justify-content: space-between;
-	padding: 1em;
+	padding: 0.8em;
 	position: absolute;
 	top: 0;
-}
-
-.logo {
-	max-width: 150px;
 }
 
 .nav {
@@ -670,7 +666,7 @@ header {
 
 /* Footer */
 .footer {
-	background: #111;
+	background: var(--clr-black);
 	color: var(--clr-accent);
 	text-align: center;
 	padding: 1.8em 0;
