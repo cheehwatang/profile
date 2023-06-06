@@ -1,249 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chee Hwa Tang | Full Stack Developer</title>
-    <meta name="description" content="A passionate full stack developer committed to building applications and collaborating with others on various projects with the mission of contributing to society.">
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chee Hwa Tang | Full Stack Developer</title>
+		<meta
+			name="description"
+			content="A passionate full stack developer committed to building applications and collaborating with others on various projects with the mission of contributing to society."
+		/>
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="
         default-src 'self';
         img-src 'self' https://res.cloudinary.com;
         script-src 'self' 'unsafe-inline' https://use.fontawesome.com https://fonts.googleapis.com https://cdn.jsdelivr.net;
         style-src 'self' 'unsafe-inline' https://use.fontawesome.com https://fonts.googleapis.com;
         font-src 'self' https://fonts.googleapis.com https://use.fontawesome.com https://fonts.gstatic.com"
-    />
-    
-    <!-- Facebook Open Graph data -->
-    <meta property="og:title" content="Chee Hwa Tang | Full Stack Developer">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cheehwatang.com/">
-    <meta property="og:image" content="https://cheehwatang.com/images/website_home.png">
-    <meta property="og:description" content="A passionate full stack developer committed to building applications and collaborating with others on various projects with the mission of contributing to society.">
-    <meta property="og:site_name" content="cheehwatang.com">
+		/>
 
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@cheehwatang">
-    <meta name="twitter:title" content="Chee Hwa Tang | Full Stack Developer">
-    <meta name="twitter:description" content="A passionate full stack developer committed to building applications and collaborating with others on various projects with the mission of contributing to society.">
-    <meta name="twitter:creator" content="@cheehwatang">
-    <meta name="twitter:image:src" content="https://cheehwatang.com/images/website_home.png">
+		<!-- Facebook Open Graph data -->
+		<meta property="og:title" content="Chee Hwa Tang | Full Stack Developer" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://cheehwatang.com/" />
+		<meta
+			property="og:image"
+			content="https://cheehwatang.com/images/website_home.png"
+		/>
+		<meta
+			property="og:description"
+			content="A passionate full stack developer committed to building applications and collaborating with others on various projects with the mission of contributing to society."
+		/>
+		<meta property="og:site_name" content="cheehwatang.com" />
 
-    <link rel="shortcut icon" type="image/png" href="images/cheehwatang_logo_small.png"/>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,600,900&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,600,900&display=swap" media="print" onload="this.onload=null;this.removeAttribute('media');">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,600,900&display=swap"></noscript>
-    <link rel="preload" as="style" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css" media="print" onload="this.onload=null;this.removeAttribute('media');">
-    <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css"></noscript>
-  </head>
-  <body>
-    <!-- Navigation Bar at the Top of the Page -->
-    <header>
-      <div class="logo">
-        <a href="https://cheehwatang.com"><img src="images/cheehwatang.svg" alt="logo of cheehwatang.com" height="33.75" width="150"></a>
-      </div>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-          <li class="nav__item"><a href="#skills" class="nav__link">My Skills</a></li>
-          <li class="nav__item"><a href="#projects" class="nav__link">My Projects</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-          <li class="nav__item"><a href="./document/CV of Tang Chee Hwa.pdf" target="_blank" class="btn-outline">Resumé</a></li>
-        </ul>
-      </nav>
-    </header>
+		<!-- Twitter Card data -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@cheehwatang" />
+		<meta name="twitter:title" content="Chee Hwa Tang | Full Stack Developer" />
+		<meta
+			name="twitter:description"
+			content="A passionate full stack developer committed to building applications and collaborating with others on various projects with the mission of contributing to society."
+		/>
+		<meta name="twitter:creator" content="@cheehwatang" />
+		<meta
+			name="twitter:image:src"
+			content="https://cheehwatang.com/images/website_home.png"
+		/>
 
-    <!-- Introduction Section -->
-    <section class="intro" id="home">
-      <div class="section__container--intro">
-        <h1 class="section__title section__title--intro">
-          Hi <span class="wave">👋</span> I am <strong>Chee Hwa <span class="underline">Tang</span></strong>
-        </h1>
-        <p class="section__subtitle section__subtitle--intro">Full Stack Developer</p>
-        <img src="https://res.cloudinary.com/dsx50recn/image/upload/c_fill,h_560,w_560/v1681614821/Portfolio%20Website/profile_picture_hjf5dr.webp" alt="a picture of Chee Hwa Tang smiling" class="intro__img" loading="eager">
-      </div>
-      <div>
-        <h2 class="fs-h3">Building your digital dreams into reality.</h2>
-      </div>
-    </section>
+		<link
+			rel="shortcut icon"
+			type="image/png"
+			href="images/cheehwatang_logo_small.png"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="preload"
+			as="style"
+			href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,600,900&display=swap"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,600,900&display=swap"
+			media="print"
+			onload="this.onload=null;this.removeAttribute('media');"
+		/>
+		<noscript
+			><link
+				rel="stylesheet"
+				href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,600,900&display=swap"
+		/></noscript>
+		<link
+			rel="preload"
+			as="style"
+			href="https://use.fontawesome.com/releases/v6.1.2/css/all.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v6.1.2/css/all.css"
+			media="print"
+			onload="this.onload=null;this.removeAttribute('media');"
+		/>
+		<noscript
+			><link
+				rel="stylesheet"
+				href="https://use.fontawesome.com/releases/v6.1.2/css/all.css"
+		/></noscript>
+	</head>
+	<body>
+		<!-- Navigation Bar at the Top of the Page -->
+		<header>
+			<div class="logo">
+				<a href="https://cheehwatang.com"
+					><img
+						src="images/cheehwatang.svg"
+						alt="logo of cheehwatang.com"
+						height="33.75"
+						width="150"
+				/></a>
+			</div>
+			<button class="nav-toggle" aria-label="toggle navigation">
+				<span class="hamburger"></span>
+			</button>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+					<li class="nav__item">
+						<a href="#skills" class="nav__link">My Skills</a>
+					</li>
+					<li class="nav__item">
+						<a href="#projects" class="nav__link">My Projects</a>
+					</li>
+					<li class="nav__item">
+						<a href="#about" class="nav__link">About me</a>
+					</li>
+					<li class="nav__item">
+						<a href="#contact" class="nav__link">Contact</a>
+					</li>
+					<li class="nav__item">
+						<a
+							href="./document/CV of Tang Chee Hwa.pdf"
+							target="_blank"
+							class="btn-outline"
+							>Resumé</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-    <div class="wave-spacer wave-base-to-black"></div>
+		<!-- Introduction Section -->
+		<section class="intro" id="home">
+			<div class="section__container--intro">
+				<h1 class="section__title section__title--intro">
+					Hi <span class="wave">👋</span> I am
+					<strong>Chee Hwa <span class="underline">Tang</span></strong>
+				</h1>
+				<p class="section__subtitle section__subtitle--intro">
+					Full Stack Developer
+				</p>
+				<img
+					src="https://res.cloudinary.com/dsx50recn/image/upload/c_fill,h_560,w_560/v1681614821/Portfolio%20Website/profile_picture_hjf5dr.webp"
+					alt="a picture of Chee Hwa Tang smiling"
+					class="intro__img"
+					loading="eager"
+				/>
+			</div>
+			<div>
+				<h2 class="fs-h3">Building your digital dreams into reality.</h2>
+			</div>
+		</section>
 
-    <!-- My Skills Section -->
-    <section class="my-skills" id="skills">
-      <h2 class="section__title section__title--skills">Skills</h2>
-      <div class="skills">
-        <div class="skill">
-          <h3>Front-end Design</h3>
-          <ul class="skill-list">
-            <li class="skill-list__item">HTML, CSS, JavaScript</li>
-            <li class="skill-list__item">Responsive UI/UX Design</li>
-            <li class="skill-list__item">React & Redux</li>
-            <li class="skill-list__item">Wireframe Design (Figma)</li>
-          </ul>
-        </div> <!-- / skill -->
-        
-        <div class="skill">
-          <h3>Back-end Engineering</h3>
-          <ul class="skill-list">
-            <li class="skill-list__item">Ruby on Rails</li>
-            <li class="skill-list__item">NodeJS (In-Progress)</li>
-            <li class="skill-list__item">Querying APIs</li>
-            <li class="skill-list__item">MVC Design</li>
-          </ul>
-        </div> <!-- / skill -->
-        
-        <div class="skill">
-          <h3>Databases & DevOps</h3>
-          <ul class="skill-list">
-            <li class="skill-list__item">SQL, PostgreSQL</li>
-            <li class="skill-list__item">Deployment with Heroku</li>
-            <li class="skill-list__item">Agile Methodologies with Kanban</li>
-            <li class="skill-list__item">CI/CD</li>
-          </ul>
-        </div> <!-- / skill -->
-      </div> <!-- / skills -->
-    </section>
-    
-    <div class="wave-spacer-narrow wave-black-to-base-narrow"></div>
-    <div class="wave-spacer-narrow wave-base-to-black-narrow"></div>
+		<div class="wave-spacer wave-base-to-black"></div>
 
-    <!-- My Projects Section -->
-    <section class="my-projects" id="projects">
-      <div id="tsparticles"></div>
-      <h2 class="section__title section__title--projects">My projects</h2>
+		<!-- My Skills Section -->
+		<section class="my-skills" id="skills">
+			<h2 class="section__title section__title--skills">Skills</h2>
+			<div class="skills">
+				<div class="skill">
+					<h3>Front-end Design</h3>
+					<ul class="skill-list">
+						<li class="skill-list__item">HTML, CSS, JavaScript</li>
+						<li class="skill-list__item">Responsive UI/UX Design</li>
+						<li class="skill-list__item">React & Redux</li>
+						<li class="skill-list__item">Wireframe Design (Figma)</li>
+					</ul>
+				</div>
+				<!-- / skill -->
 
-      <div class="portfolio">
-        <!-- Soundstate -->
-        <a href="#soundstate" class="portfolio__item">
-          <img src="https://res.cloudinary.com/dsx50recn/image/upload/v1681616596/Portfolio%20Website/soundstate_landing_ugec0o.webp" alt="landing page of SoundState app" class="portfolio__img" loading="lazy">
-        </a>
-      </div>
-      <div class="portfolio__section" id="soundstate">
-        <h3>SoundState</h3>
-        <div class="portfolio__description">
-          <div class="portfolio__summary">
-            <h4 class="mobile-hidden">SUMMARY</h4>
-            <p>
-              SoundState is an app that generates a personalized music playlist based on the user's mood, curated from their Spotify Liked Songs. 
-              Its most standout feature is the creation of an image that visually represents the mood and songs of the playlist, 
-              making music sharing and discovery a fun and engaging experience. 
-              Our 4-person team developed SoundState during the final 2 weeks of our bootcamp.
-            </p>
-            <div class="portfolio__tech-stack">
-              <h4>TECH</h4>
-              <ul>
-                <li>Ruby on Rails</li>
-                <li>AJAX & Stimulus JS</li>
-                <li>Three.js</li>
-                <li>Sass</li>
-                <li>PostgreSQL</li>
-                <li>Heroku</li>
-                <li>Spotify API</li>
-                <li>OpenAI API</li>
-              </ul>
-            </div>
-            <div>
-              <a href="https://www.soundstate.live/" target="_blank" class="btn btn-accent-dark" aria-label="Visit SoundState">Visit SoundState <i class="fa-solid fa-angle-right"></i></a>
-            </div>
-            <div>
-              <a href="https://github.com/weepotty/soundstate" target="_blank" class="btn btn-accent-dark" aria-label="Visit SoundState on Github"><span class="sr-only sr-only-focusable">Visit SoundState on Github</span><i class="fa-brands fa-github fa-2x"></i></a>
-            </div>
-          </div>
-          <div class="portfolio__description__img">
-            <a href="https://www.soundstate.live/" target="_blank" aria-label="Visit SoundState">
-              <span class="sr-only sr-only-focusable">Visit SoundState</span>
-              <img src="https://res.cloudinary.com/dsx50recn/image/upload/v1681616602/Portfolio%20Website/soundstate-landing-large_pcgylx.webp" alt="soundstate landing page" loading="lazy">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+				<div class="skill">
+					<h3>Back-end Engineering</h3>
+					<ul class="skill-list">
+						<li class="skill-list__item">Ruby on Rails</li>
+						<li class="skill-list__item">NodeJS (In-Progress)</li>
+						<li class="skill-list__item">Querying APIs</li>
+						<li class="skill-list__item">MVC Design</li>
+					</ul>
+				</div>
+				<!-- / skill -->
 
-    <div class="wave-spacer wave-black-to-base"></div>
+				<div class="skill">
+					<h3>Databases & DevOps</h3>
+					<ul class="skill-list">
+						<li class="skill-list__item">SQL, PostgreSQL</li>
+						<li class="skill-list__item">Deployment with Heroku</li>
+						<li class="skill-list__item">Agile Methodologies with Kanban</li>
+						<li class="skill-list__item">CI/CD</li>
+					</ul>
+				</div>
+				<!-- / skill -->
+			</div>
+			<!-- / skills -->
+		</section>
 
-    <!-- About Me Section -->
-    <section class="about-me" id="about">
-      <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about">A Curious Explorer</p>
-      
-      <div class="about-me__body">
-        <p>
-          As a Food Technologist with five years of industry experience specializing in natural food coloring solutions for new product development,
-          I have developed strong <span>problem solving</span> skills with a keen <span>attention to detail</span>, enabling me to consistently deliver tailored solutions to clients.
-          In addition, my <span>effective communication</span> skills have been instrumental when collaborating with the sales team to promote our products and services to customers, resulting in significant business growth.
-        </p>
-        <p>
-          Following an extensive spiritual exploration and self-discovery, I have gained a clear understanding of my values and recognized the blessings in my life. 
-          My mission is to improve the lives of others and <span>contribute</span> to a brighter future for generations to come, 
-          by carrying forward the legacy of generosity and kindness bestowed upon me by my predecessors.
-        </p>
-        <p>
-          Recognizing the profound impact of the technology industry, I enrolled in the Le Wagon Web Development course, where I acquired skills in designing and building apps that enhance people's lives.
-          During the course, I learned to be <span>adaptable</span> when learning new concepts and <span>collaborating</span> with teammates of diverse backgrounds.
-          I was surprised that front-end development stirred my <span>creativity</span>, allowing me to code beautiful and accessible apps.
-        </p>
-        <p>
-          Since completing the course, I have continuously improved my technical skills and created web apps within teams to deliver value to others.
-          I am eager to apply my skills to create innovative apps that make a positive impact in the world.
-        </p>
-        <p>
-          In my free time, I love to 🏃‍♂️ run, 🚴 cycle, 🏊‍♂️ swim and 🛼 inline-skating, or simply hangout with friends over a ☕ coffee or 🍻 beers.
-        </p>
-      </div>
-      
-      <img src="https://res.cloudinary.com/dsx50recn/image/upload/c_fill,h_800,w_540/v1681614821/Portfolio%20Website/profile_picture_rinjani_a9hyoc.webp" alt="portrait of Chee Hwa Tang at Mount Rinjani." class="about-me__img" loading="lazy">
-    </section>
+		<div class="wave-spacer-narrow wave-black-to-base-narrow"></div>
+		<div class="wave-spacer-narrow wave-base-to-black-narrow"></div>
 
-    <!-- Contact Section -->
-    <section class="contact-me" id="contact">
-      <h2 class="section__title section__title--contact">Looking for a new addition to your team?</h2>
-      <p class="contact-me__body">
-        I am currently available to join a team or company.<br>
-        Additionally, I am looking for collaborations to develop apps and expand my expertise as a full stack developer.
-        Please feel free to contact me for any questions or to simply say hi.
-      </p>
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://github.com/cheehwatang" target="_blank" aria-label="Find me on Github">
-            <span class="sr-only sr-only-focusable">Find me on Github</span>
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://www.linkedin.com/in/cheehwatang/" target="_blank" aria-label="Find me on LinkedIn">
-            <span class="sr-only sr-only-focusable">Find me on LinkedIn</span>
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://twitter.com/cheehwatang" target="_blank" aria-label="Find me on Twitter">
-            <span class="sr-only sr-only-focusable">Find me on Twitter</span>
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-        </li>
-      </ul>
-    </section>
+		<!-- My Projects Section -->
+		<section class="my-projects" id="projects">
+			<div id="tsparticles"></div>
+			<h2 class="section__title section__title--projects">My projects</h2>
 
-    <div class="wave-spacer-narrow wave-base-to-black-narrow"></div>
+			<div class="portfolio">
+				<!-- Soundstate -->
+				<a href="#soundstate" class="portfolio__item">
+					<img
+						src="https://res.cloudinary.com/dsx50recn/image/upload/v1681616596/Portfolio%20Website/soundstate_landing_ugec0o.webp"
+						alt="landing page of SoundState app"
+						class="portfolio__img"
+						loading="lazy"
+					/>
+				</a>
+			</div>
+			<div class="portfolio__section" id="soundstate">
+				<h3>SoundState</h3>
+				<div class="portfolio__description">
+					<div class="portfolio__summary">
+						<h4 class="mobile-hidden">SUMMARY</h4>
+						<p>
+							SoundState is an app that generates a personalized music playlist
+							based on the user's mood, curated from their Spotify Liked Songs.
+							Its most standout feature is the creation of an image that
+							visually represents the mood and songs of the playlist, making
+							music sharing and discovery a fun and engaging experience. Our
+							4-person team developed SoundState during the final 2 weeks of our
+							bootcamp.
+						</p>
+						<div class="portfolio__tech-stack">
+							<h4>TECH</h4>
+							<ul>
+								<li>Ruby on Rails</li>
+								<li>AJAX & Stimulus JS</li>
+								<li>Three.js</li>
+								<li>Sass</li>
+								<li>PostgreSQL</li>
+								<li>Heroku</li>
+								<li>Spotify API</li>
+								<li>OpenAI API</li>
+							</ul>
+						</div>
+						<div>
+							<a
+								href="https://www.soundstate.live/"
+								target="_blank"
+								class="btn btn-accent-dark"
+								aria-label="Visit SoundState"
+								>Visit SoundState <i class="fa-solid fa-angle-right"></i
+							></a>
+						</div>
+						<div>
+							<a
+								href="https://github.com/weepotty/soundstate"
+								target="_blank"
+								class="btn btn-accent-dark"
+								aria-label="Visit SoundState on Github"
+								><span class="sr-only sr-only-focusable"
+									>Visit SoundState on Github</span
+								><i class="fa-brands fa-github fa-2x"></i
+							></a>
+						</div>
+					</div>
+					<div class="portfolio__description__img">
+						<a
+							href="https://www.soundstate.live/"
+							target="_blank"
+							aria-label="Visit SoundState"
+						>
+							<span class="sr-only sr-only-focusable">Visit SoundState</span>
+							<img
+								src="https://res.cloudinary.com/dsx50recn/image/upload/v1681616602/Portfolio%20Website/soundstate-landing-large_pcgylx.webp"
+								alt="soundstate landing page"
+								loading="lazy"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <a href="https://github.com/cheehwatang" target="_blank" class="footer__link">Designed & Built by Chee Hwa <span class="underline">Tang</span></a>
-    </footer>
+		<div class="wave-spacer wave-black-to-base"></div>
 
-    <script src="js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
-    <script src="js/tsparticles.js" type="text/javascript"></script>
-  </body>
+		<!-- About Me Section -->
+		<section class="about-me" id="about">
+			<h2 class="section__title section__title--about">Who I am</h2>
+			<p class="section__subtitle section__subtitle--about">
+				A Curious Explorer
+			</p>
+
+			<div class="about-me__body">
+				<p>
+					As a Food Technologist with five years of industry experience
+					specializing in natural food coloring solutions for new product
+					development, I have developed strong
+					<span>problem solving</span> skills with a keen
+					<span>attention to detail</span>, enabling me to consistently deliver
+					tailored solutions to clients. In addition, my
+					<span>effective communication</span> skills have been instrumental
+					when collaborating with the sales team to promote our products and
+					services to customers, resulting in significant business growth.
+				</p>
+				<p>
+					Following an extensive spiritual exploration and self-discovery, I
+					have gained a clear understanding of my values and recognized the
+					blessings in my life. My mission is to improve the lives of others and
+					<span>contribute</span> to a brighter future for generations to come,
+					by carrying forward the legacy of generosity and kindness bestowed
+					upon me by my predecessors.
+				</p>
+				<p>
+					Recognizing the profound impact of the technology industry, I enrolled
+					in the Le Wagon Web Development course, where I acquired skills in
+					designing and building apps that enhance people's lives. During the
+					course, I learned to be <span>adaptable</span> when learning new
+					concepts and <span>collaborating</span> with teammates of diverse
+					backgrounds. I was surprised that front-end development stirred my
+					<span>creativity</span>, allowing me to code beautiful and accessible
+					apps.
+				</p>
+				<p>
+					Since completing the course, I have continuously improved my technical
+					skills and created web apps within teams to deliver value to others. I
+					am eager to apply my skills to create innovative apps that make a
+					positive impact in the world.
+				</p>
+				<p>
+					In my free time, I love to 🏃‍♂️ run, 🚴 cycle, 🏊‍♂️ swim and 🛼
+					inline-skating, or simply hangout with friends over a ☕ coffee or 🍻
+					beers.
+				</p>
+			</div>
+
+			<img
+				src="https://res.cloudinary.com/dsx50recn/image/upload/c_fill,h_800,w_540/v1681614821/Portfolio%20Website/profile_picture_rinjani_a9hyoc.webp"
+				alt="portrait of Chee Hwa Tang at Mount Rinjani."
+				class="about-me__img"
+				loading="lazy"
+			/>
+		</section>
+
+		<!-- Contact Section -->
+		<section class="contact-me" id="contact">
+			<h2 class="section__title section__title--contact">
+				Looking for a new addition to your team?
+			</h2>
+			<p class="contact-me__body">
+				I am currently available to join a team or company.<br />
+				Additionally, I am looking for collaborations to develop apps and expand
+				my expertise as a full stack developer. Please feel free to contact me
+				for any questions or to simply say hi.
+			</p>
+			<ul class="social-list">
+				<li class="social-list__item">
+					<a
+						class="social-list__link"
+						href="https://github.com/cheehwatang"
+						target="_blank"
+						aria-label="Find me on Github"
+					>
+						<span class="sr-only sr-only-focusable">Find me on Github</span>
+						<i class="fa-brands fa-github"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a
+						class="social-list__link"
+						href="https://www.linkedin.com/in/cheehwatang/"
+						target="_blank"
+						aria-label="Find me on LinkedIn"
+					>
+						<span class="sr-only sr-only-focusable">Find me on LinkedIn</span>
+						<i class="fa-brands fa-linkedin-in"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a
+						class="social-list__link"
+						href="https://twitter.com/cheehwatang"
+						target="_blank"
+						aria-label="Find me on Twitter"
+					>
+						<span class="sr-only sr-only-focusable">Find me on Twitter</span>
+						<i class="fa-brands fa-twitter"></i>
+					</a>
+				</li>
+			</ul>
+			<div class="resume-btn">
+				<a
+					href="./document/CV of Tang Chee Hwa.pdf"
+					target="_blank"
+					class="btn-outline"
+					>Resumé</a
+				>
+			</div>
+		</section>
+
+		<div class="wave-spacer-narrow wave-base-to-black-narrow"></div>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<a
+				href="https://github.com/cheehwatang"
+				target="_blank"
+				class="footer__link"
+				>Designed & Built by Chee Hwa <span class="underline">Tang</span></a
+			>
+		</footer>
+
+		<script src="js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+		<script src="js/tsparticles.js" type="text/javascript"></script>
+	</body>
 </html>
