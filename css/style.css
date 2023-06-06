@@ -522,7 +522,8 @@ header {
 	margin: 0.5em 0;
 }
 
-.portfolio__summary p {
+.portfolio__summary p,
+.portfolio__description__why p {
 	text-align: justify;
 	padding: 0 2em;
 }
