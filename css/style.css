@@ -190,10 +190,6 @@ header {
 	top: 0;
 }
 
-.logo {
-	max-width: 150px;
-}
-
 .nav {
 	position: fixed;
 	background: var(--clr-dark);
