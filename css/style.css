@@ -522,9 +522,25 @@ header {
 	margin: 0.5em 0;
 }
 
-.portfolio__summary p {
+.portfolio__summary p,
+.portfolio__description__why p,
+.portfolio__description__learnings p {
 	text-align: justify;
 	padding: 0 2em;
+}
+
+.portfolio__description__learnings a {
+	color: var(--clr-accent);
+}
+
+.portfolio__description__learnings li {
+	text-align: justify;
+	margin-bottom: 0.5em;
+}
+
+.portfolio__description__learnings span {
+	font-weight: bold;
+	color: var(--clr-accent);
 }
 
 .portfolio__tech-stack ul {
