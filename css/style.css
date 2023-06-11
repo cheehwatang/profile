@@ -95,6 +95,7 @@ img {
 .btn-accent {
 	background: var(--clr-accent);
 }
+
 .btn-accent-dark {
 	background: var(--clr-accent-medium);
 }
@@ -684,6 +685,11 @@ header {
 
 .resume-btn {
 	margin: 2rem 0;
+}
+
+.resume-btn a {
+	color: var(--clr-accent-dark);
+	border-color: var(--clr-accent-dark);
 }
 
 /* Footer */
