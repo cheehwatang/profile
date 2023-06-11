@@ -7,8 +7,8 @@
 
 /* Variables set for fonts */
 :root {
-	--ff-primary: "Source Sans Pro", sans-serif;
-	--ff-secondary: "Source Code Pro", monospace;
+	--ff-primary: 'Source Sans Pro', sans-serif;
+	--ff-secondary: 'Source Code Pro', monospace;
 
 	--fw-reg: 300;
 	--fw-medium: 600;
@@ -274,7 +274,7 @@ header {
 
 .hamburger::before,
 .hamburger::after {
-	content: "";
+	content: '';
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -326,8 +326,8 @@ header {
 		display: grid;
 		grid-column-gap: 1em;
 		grid-template-areas:
-			"img title"
-			"img subtitle";
+			'img title'
+			'img subtitle';
 		grid-template-columns: 220px 1fr;
 	}
 
@@ -354,7 +354,7 @@ header {
 .my-skills {
 	position: relative;
 	background-color: var(--clr-accent);
-	background-image: url("https://res.cloudinary.com/dsx50recn/image/upload/q_10/v1682056798/Portfolio%20Website/background_skills_full_bqufit.webp");
+	background-image: url('https://res.cloudinary.com/dsx50recn/image/upload/q_10/v1682056798/Portfolio%20Website/background_skills_full_bqufit.webp');
 	background-position: center;
 	background-size: cover;
 	background-blend-mode: multiply;
@@ -372,7 +372,7 @@ header {
 }
 
 .section__title--skills::after {
-	content: "";
+	content: '';
 	display: block;
 	width: 2em;
 	height: 1px;
@@ -453,7 +453,7 @@ header {
 }
 
 .section__title--projects::after {
-	content: "";
+	content: '';
 	display: block;
 	width: 2em;
 	height: 1px;
@@ -533,6 +533,11 @@ header {
 	color: var(--clr-accent);
 }
 
+.portfolio__description__learnings ul {
+	padding: 0 2em;
+	margin: 0;
+}
+
 .portfolio__description__learnings li {
 	text-align: justify;
 	margin-bottom: 0.5em;
@@ -606,9 +611,9 @@ header {
 		display: grid;
 		grid-template-columns: 1fr 240px;
 		grid-template-areas:
-			"title img"
-			"subtitle img"
-			"text img";
+			'title img'
+			'subtitle img'
+			'text img';
 		grid-column-gap: 2em;
 	}
 
@@ -813,11 +818,11 @@ header {
 }
 
 .wave-base-to-black {
-	background-image: url("../images/spacers/wave-base-black.svg");
+	background-image: url('../images/spacers/wave-base-black.svg');
 }
 
 .wave-black-to-base {
-	background-image: url("../images/spacers/wave-black-base.svg");
+	background-image: url('../images/spacers/wave-black-base.svg');
 }
 
 .wave-spacer-narrow {
@@ -829,9 +834,9 @@ header {
 }
 
 .wave-base-to-black-narrow {
-	background-image: url("../images/spacers/wave-base-black-narrow.svg");
+	background-image: url('../images/spacers/wave-base-black-narrow.svg');
 }
 
 .wave-black-to-base-narrow {
-	background-image: url("../images/spacers/wave-black-base-narrow.svg");
+	background-image: url('../images/spacers/wave-black-base-narrow.svg');
 }
